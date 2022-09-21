@@ -1,0 +1,35 @@
+.cardhero {
+    transform: .5s;
+}
+.cardhero_active{
+    z-index: 10;
+}
+.cardhero_inactive{
+    position: absolute;
+    top: -5rem;
+    right: -55rem;
+    opacity: 0.5;
+}
+.cardhero_none{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .cardhero_inactive{
+        top: 3rem;
+        right: -60rem;
+    }
+}
+
+@media screen and (min-height: 1023px){
+    .cardhero_inactive{
+        top: 3rem;
+        right: -79rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cardhero_inactive{
+        display: none;
+    }
+}
